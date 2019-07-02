@@ -1,3 +1,66 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog.chaserhkj.me"
 languageCode = "en-us"
-title = "My New Hugo Site"
+defaultContentLanguage = "en-us"
+title = "Curiosity & Heroism"                    # site title
+theme = "zozo"
+hasCJKLanguage = true                # has chinese/japanese/korean ?
+summaryLength = 100
+paginate = 4                         # shows the number of articles
+enableEmoji = true
+googleAnalytics = ""                 # your google analytics id
+disqusShortname = ""                 # your discuss shortname
+
+[author]                             # essential
+  name = "Chaser"
+
+[blackfriday]
+  smartypants = false
+
+[[menu.main]]                        # config your menu
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Archive"
+  weight = 20
+  identifier = "archive"
+  url = "/posts/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "About"
+  weight = 40
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  subTitle = "Chaser's Personal Blog"                                       # site's subTitle
+  footerSlogan = "There is only one heroism in the world: to see the world as it is, and to love it."
+  keywords = ["tech", "programming","geek", "otaku"]                                  # site's keywords
+  description = "Chaser's personal blog on tech stuff, otaku funs and other things about curiosity and heroism."                        # site's description
+
+# mathjax
+  enableMathJax = true                                                 # enable mathjax
+
+  enableSummary = true                                                 # display the article summary
+  
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[params.valine]
+  enable = false
+  appId = ""
+  appKey = ""
+  placeholder = " "
+  visitor = true
+
+[social]
+  github = " "
+  twitter = " "
+  facebook = " "
+  weibo = " "
+  instagram = " "
